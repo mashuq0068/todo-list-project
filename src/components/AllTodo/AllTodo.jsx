@@ -15,6 +15,7 @@ const AllTodo = () => {
                 <p>{oneTodo?.todoName}</p>
                 <p>{oneTodo?.priority}</p>
                 <p>{oneTodo?.category}</p>
+                <p>{oneTodo?.dueDate}</p>
                 
             </div>)}
         </div>

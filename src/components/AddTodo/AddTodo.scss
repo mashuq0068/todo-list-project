@@ -8,22 +8,56 @@
     margin-right: auto;
     align-items: center;
     margin-bottom: 20px;
+    padding: 5%;
   
-    .input {
+    .input-container {
       width: 100%;
-      padding: 10px;
-      font-size: 16px;
-      border: 1px solid hwb(205 59% 12%);
-      border-radius: 5px;
-      margin: 10px;
-      &:focus {
-        border: 1px solid hsl(205, 64%, 44%);
+  
+      label {
+        font-weight: 600;
+        color: rgb(88, 83, 83);
+        margin-bottom: 4px;
+        margin-top: 10px;
+        margin-left: 5%;
+        display: block;
+        width: 100%;
+        text-align: left;
       }
-      
+  
+      input,
+      select,
+      .ant-picker {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid hwb(205 59% 12%);
+        border-radius: 5px;
+        margin: 10px;
+  
+        &:focus {
+          border: 1px solid hsl(205, 64%, 44%);
+        }
+      }
+      .ant-select{
+     margin-bottom: 16px;
+   
+      .ant-select-selector {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid hwb(205 59% 12%);
+        border-radius: 5px;
+        margin: 10px;
+        text-align: left;
+        &:focus {
+            border: 1px solid hsl(205, 64%, 44%);
+          }
+      }
+    }
     }
   
-    
-    
+    .ant-btn {
+      margin-top: 16px;
+    }
   }
-
-
+  
