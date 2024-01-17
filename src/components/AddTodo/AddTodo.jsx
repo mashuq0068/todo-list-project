@@ -4,10 +4,12 @@ import { Input, Button, Select, DatePicker } from 'antd';
 import './AddTodo.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import { addTodo } from '@/redux/slices/todoSlice';
+import { useRouter } from 'next/navigation';
 
 const { Option } = Select;
 
 const AddTodo = () => {
+   const router = useRouter()
     const allTodo = useSelector((state) => {
         return state.allTodo
      })
@@ -29,6 +31,7 @@ const AddTodo = () => {
     }
     console.log(todo)
     dispatch(addTodo(todo))
+    router.push('/');
   };
 
   return (

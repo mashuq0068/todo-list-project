@@ -1,9 +1,21 @@
-$primary-color: #64ff00;
+$primary-color: #3498db;
 
-.container {
-  
+$blue-gradient: linear-gradient(45deg, $primary-color, #007bff);
+
+
+ 
+.heading {
+  background: $blue-gradient; 
   text-align: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  color: white;
+  font-weight: bold;
+  
+  border-radius: 7px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vh;
+  font-size: 30px;
+  padding: 6px 12px;
 }
+
+

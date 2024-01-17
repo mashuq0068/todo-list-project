@@ -1,3 +1,65 @@
+// .add-todo-container {
+//     height: 100vh;
+//     width: 40vw;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     margin-left: auto;
+//     margin-right: auto;
+//     align-items: center;
+//     margin-bottom: 20px;
+//     padding: 5%;
+  
+//     .input-container {
+//       width: 100%;
+  
+//       label {
+//         font-weight: 600;
+//         color: rgb(88, 83, 83);
+//         margin-bottom: 4px;
+//         margin-top: 10px;
+//         margin-left: 5%;
+//         display: block;
+//         width: 100%;
+//         text-align: left;
+//       }
+  
+//       input,
+//       select,
+//       .ant-picker {
+//         width: 100%;
+//         padding: 10px;
+//         font-size: 16px;
+//         border: 1px solid hwb(205 59% 12%);
+//         border-radius: 5px;
+//         margin: 10px;
+  
+//         &:focus {
+//           border: 1px solid hsl(205, 64%, 44%);
+//         }
+//       }
+//       .ant-select{
+//      margin-bottom: 16px;
+   
+//       .ant-select-selector {
+//         width: 100%;
+//         padding: 10px;
+//         font-size: 16px;
+//         border: 1px solid hwb(205 59% 12%);
+//         border-radius: 5px;
+//         margin: 10px;
+//         text-align: left;
+//         &:focus {
+//             border: 1px solid hsl(205, 64%, 44%);
+//           }
+//       }
+//     }
+//     }
+  
+//     .ant-btn {
+//       margin-top: 16px;
+//     }
+//   }
 .add-todo-container {
     height: 100vh;
     width: 40vw;
@@ -9,6 +71,23 @@
     align-items: center;
     margin-bottom: 20px;
     padding: 5%;
+  
+    @media (min-width: 1700px) {
+      font-size: 20px;
+  
+      .input-container {
+        label {
+          font-size: 20px;
+        }
+  
+        input,
+        select,
+        .ant-picker,
+        .ant-select-selector {
+          font-size: 20px;
+        }
+      }
+    }
   
     .input-container {
       width: 100%;
@@ -26,7 +105,8 @@
   
       input,
       select,
-      .ant-picker {
+      .ant-picker,
+      .ant-select-selector {
         width: 100%;
         padding: 10px;
         font-size: 16px;
@@ -38,22 +118,18 @@
           border: 1px solid hsl(205, 64%, 44%);
         }
       }
-      .ant-select{
-     margin-bottom: 16px;
-   
-      .ant-select-selector {
-        width: 100%;
-        padding: 10px;
-        font-size: 16px;
-        border: 1px solid hwb(205 59% 12%);
-        border-radius: 5px;
-        margin: 10px;
-        text-align: left;
-        &:focus {
+  
+      .ant-select {
+        margin-bottom: 16px;
+  
+        .ant-select-selector {
+          text-align: left;
+  
+          &:focus {
             border: 1px solid hsl(205, 64%, 44%);
           }
+        }
       }
-    }
     }
   
     .ant-btn {

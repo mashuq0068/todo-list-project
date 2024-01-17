@@ -1,19 +1,35 @@
 
-import { Layout } from 'antd'
-import styles from './page.module.scss'
-import { Content } from 'antd/lib/layout/layout';
 import AllTodo from '@/components/AllTodo/AllTodo';
-import AddTodo from '@/components/AddTodo/AddTodo';
+import Layout, { Content } from 'antd/es/layout/layout';
+import styles from './page.module.scss'
+import './globals.scss'
+import { Button } from 'antd';
+import { PlusOutlined } from '@ant-design/icons'
+import Link from 'next/link';
+
+
+
 
 
 export default function Home() {
+  
+
   return (
-    <main>
-    <Layout className={styles.container}>
-      
-      <AllTodo></AllTodo>
-      <AddTodo></AddTodo>
-    </Layout>
-    </main>
+    <Layout>
+    <Content className={styles.heading}>
+      All Todo
+    </Content>
+    
+    <Link href="/addTodo"> 
+        <Button
+          type="primary"
+          shape="circle"
+          icon={<PlusOutlined />}
+          style={{ position: 'fixed', bottom: '10vh', zIndex:'2', right: '10vw', transform: 'translateX(-50%)' }}
+        />
+      </Link>
+
+    <AllTodo></AllTodo>
+  </Layout>
   )
 }

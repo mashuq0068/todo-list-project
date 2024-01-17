@@ -1,11 +1,53 @@
+// AllTodo.scss
 .main-container {
-    display: flex;
-    justify-content: space-between;
-    
-    .todo{
-        display: flex;
-        background-color: blue;
-        color: white;
-    
+    padding: 20px;
+    width: 80vw;
+    overflow: auto;
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .ant-table {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+    .ant-table-thead {
+      th {
+        background-color: #1890ff;
+        color: #fff;
+        border-color: #1890ff;
+        font-weight: bold;
+      }
     }
-}
+  
+    .ant-table-tbody {
+      tr {
+        &:nth-child(even) {
+          background-color: #f7f7f7;
+        }
+  
+        &:hover {
+          background-color: #e6f7ff;
+        }
+      }
+  
+      td {
+        border-color: #e8e8e8;
+      }
+    }
+  
+    .ant-btn-danger {
+      background-color: #ff4d4f;
+      border-color: #ff4d4f;
+      color: #fff;
+  
+      &:hover,
+      &:focus {
+        background-color: #ff7875;
+        border-color: #ff7875;
+      }
+    }
+  }
+  
