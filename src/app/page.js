@@ -2,7 +2,6 @@
 import AllTodo from '@/components/AllTodo/AllTodo';
 import Layout, { Content } from 'antd/es/layout/layout';
 import styles from './page.module.scss'
-import './globals.scss'
 import { Button } from 'antd';
 import { PlusOutlined } from '@ant-design/icons'
 import Link from 'next/link';
