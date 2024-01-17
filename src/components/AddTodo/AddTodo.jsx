@@ -20,7 +20,7 @@ const AddTodo = () => {
   const [category, setCategory] = useState('');
   const dispatch = useDispatch()
   console.log(dueDate)
-
+// handle add todo
   const handleAddTodo = () => {
     
     const todo = {
@@ -38,7 +38,8 @@ const AddTodo = () => {
     
     <div className="add-todo-container">
     <div className="input-container">
-      {/* <label htmlFor="todoName">Todo Name</label> */}
+      <label htmlFor="todoName">Todo Name</label>
+      {/* todo name */}
       <Input
         id="todoName"
         placeholder="Enter todo name"
@@ -46,9 +47,9 @@ const AddTodo = () => {
         onChange={(e) => setTodoName(e.target.value)}
       />
     </div>
-
+{/* priority */}
     <div className="input-container">
-      {/* <label htmlFor="priority">Priority</label> */}
+      <label htmlFor="priority">Priority</label>
       <Select
         id="priority"
         value={priority}
@@ -60,9 +61,9 @@ const AddTodo = () => {
         <Option value="high">High Priority</Option>
       </Select>
     </div>
-
+  {/* date */}
     <div className="input-container">
-      {/* <label htmlFor="dueDate">Due Date</label> */}
+      <label htmlFor="dueDate">Due Date</label>
       <DatePicker
         id="dueDate"
         style={{ width: '100%' }}
@@ -70,9 +71,9 @@ const AddTodo = () => {
         onChange={(date) => setDueDate(date)}
       />
     </div>
-
+ {/* category */}
     <div className="input-container">
-      {/* <label htmlFor="category">Category</label> */}
+      <label htmlFor="category">Category</label>
       <Input
         id="category"
         placeholder="Enter category"

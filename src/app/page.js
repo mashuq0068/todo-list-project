@@ -25,7 +25,14 @@ export default function Home() {
           type="primary"
           shape="circle"
           icon={<PlusOutlined />}
-          style={{ position: 'fixed', bottom: '10vh', zIndex:'2', right: '10vw', transform: 'translateX(-50%)' }}
+          size="large"
+        style={{
+          position: 'fixed',
+          bottom: '10vh',
+          zIndex: '2',
+          right: '10vw',
+          transform: 'translateX(-50%)',
+        }}
         />
       </Link>
 

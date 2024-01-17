@@ -6,10 +6,12 @@ const todoSlice = createSlice({
   name: 'allTodo',
   initialState: JSON.parse(localStorage.getItem('todoList')) || [],
   reducers: {
+    // addingTodo
     addTodo(state, action) {
       state.push(action.payload);
       localStorage.setItem('todoList', JSON.stringify(state));
     },
+    // deletingTodo
     deleteTodo(state, action) {
       state.splice(action.payload, 1);
       localStorage.setItem('todoList', JSON.stringify(state));
