@@ -2,13 +2,17 @@
 import { Layout } from 'antd'
 import styles from './page.module.scss'
 import { Content } from 'antd/lib/layout/layout';
+import AllTodo from '@/components/AllTodo/AllTodo';
+import AddTodo from '@/components/AddTodo/AddTodo';
 
 
 export default function Home() {
   return (
     <main>
-    <Layout>
-      <Content className={styles.container}>This is a Todo Lbmist</Content>
+    <Layout className={styles.container}>
+      
+      <AllTodo></AllTodo>
+      <AddTodo></AddTodo>
     </Layout>
     </main>
   )

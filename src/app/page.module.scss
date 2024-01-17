@@ -1,6 +1,9 @@
 $primary-color: #64ff00;
 
 .container {
-  background-color: $primary-color;
+  
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
